@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar-SA">
+   <head>
+      <meta charset="utf-8">
+      <title>مشغل فيديوها مصغر بقائمة </title>
+      <meta name="description" content="مشغل فيديوهات مصغر">
+      <meta name="keywords" content=" ">
+      <meta name="author" content="shoog saad">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!-- fonts-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+      <!-- libraries-->
+      <!--Bootstrap3 -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <!-- CSS -->
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="container">
+<!--          to hold the top area of the player and the arrows -->
+         <div class="vid-player">
+            <div class="vid-item">
+               <div id="orderNum" class="orderNum"><i class="fas fa-medal"></i><span id="orderMsg">1</span></div>
+               <div class="vid-container">
+                  <iframe id="vid_frame_player" src='http://youtube.com/embed/abQRt6p8T7g?rel=0&amp;showinfo=0&amp;autohide=1' frameborder="0" width="560" height="315"></iframe>
+               </div>
+            </div>
+         </div>
+         <!--                                        the vedio list -->
+         <div class="vid-player-list">
+            <!--                                     the first video in the list -->
+            <div class="item">
+               <div class="vid-item" onclick="setCurVid(1);document.getElementById('vid_frame_player').src='http://youtube.com/embed/abQRt6p8T7g?rel=0&amp;showinfo=0&amp;autohide=1'">
+                  <div class="thumb">
+                     <div class="orderNum">
+                        1
+                     </div>
+                     <img src="https://img.youtube.com/vi/abQRt6p8T7g/0.jpg">
+                  </div>
+               </div>
+            </div>
+            <!--                                     the second video in the list -->
+            <div class="item">
+               <div class="vid-item" onclick="setCurVid(2);document.getElementById('vid_frame_player').src='http://youtube.com/embed/RTHI_uGyfTM?rel=0&amp;showinfo=0&amp;autohide=1'">
+                  <div class="thumb">
+                     <div class="orderNum">
+                        2
+                     </div>
+                     <img src="http://img.youtube.com/vi/RTHI_uGyfTM/0.jpg">
+                  </div>
+               </div>
+            </div>
+            <!--                                     the THIERD video in the list -->
+            <div class="item">
+               <div class="vid-item" onclick="setCurVid(3);document.getElementById('vid_frame_player').src='http://youtube.com/embed/0SNhAKyXtC8?rel=0&amp;showinfo=0&amp;autohide=1'">
+                  <div class="thumb">
+                     <div class="orderNum">
+                        3
+                     </div>
+                     <img src="http://img.youtube.com/vi/0SNhAKyXtC8/0.jpg">
+                  </div>
+               </div>
+            </div>
+            <!--                                     the fourth video in the list -->
+            <div class="item">
+               <div class="vid-item" onclick="setCurVid(4);document.getElementById('vid_frame_player').src='http://youtube.com/embed/fB8UTheTR7s?rel=0&amp;showinfo=0&amp;autohide=1'">
+                  <div class="thumb">
+                     <div  class="orderNum">
+                        4
+                     </div>
+                     <img src="http://img.youtube.com/vi/fB8UTheTR7s/0.jpg">
+                  </div>
+               </div>
+            </div>
+            <!--                                     the fiveth video in the list -->
+            <div class="item">
+               <div class="vid-item" onclick="setCurVid(5);document.getElementById('vid_frame_player').src='http://youtube.com/embed/F1f-gn_mG8M?rel=0&amp;showinfo=0&amp;autohide=1'">
+                  <div class="thumb">
+                     <div  class="orderNum">
+                        5
+                     </div>
+                     <img src="http://img.youtube.com/vi/F1f-gn_mG8M/0.jpg">
+                  </div>
+               </div>
+            </div>
+            <!--                                     the arrows-->
+            <div class="arrows">
+               <div id="next" class="arrow-left" onclick="nxtBtn()">
+                  <i class="fa fa-chevron-left fa-lg"></i>
+               </div>
+               <div id="back" class="arrow-right" onclick="prevBtn()">
+                  <i class="fa fa-chevron-right fa-lg"></i>
+               </div>
+            </div>
+         </div>
+         <!--                                  end vedio list-->
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="vedioPlayerSection.js"></script>
+   </body>
+</html>
