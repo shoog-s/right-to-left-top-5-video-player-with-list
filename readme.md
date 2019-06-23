@@ -40,7 +40,7 @@ change the video URL and img for your target video:
  - jQuery 
  - fontawsome
  - youtube api
-##Author
+## Author
 Shoog-s
 
 the code based on artical!! unfortunately I lose the resource link!! 
